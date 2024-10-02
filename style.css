@@ -1,22 +1,21 @@
 body {
-	font-family: EB Garamond, Baskerville, serif;
-	max-width: 700px;
+	font-family: "EB Garamond", "Baskerville", serif;
+	font-feature-settings: "liga" 1, "dlig" 1;
+	max-width: 600px;
 	margin: auto;
-	padding-left: 50px;
-	padding-right: 50px;
+	margin-top: 100px;
 }
 
-hr {
+/* hr {
 	border: 1px solid #000000;
-}
+} */
 
 p {
 	font-size: 20px;
-	line-height: 34px;
 	letter-spacing: .25px;
+	line-height: 34px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	/* max-width: 65ch; */
 }
 
 article {
@@ -26,7 +25,8 @@ article {
 h3 {
 	font-size: 48px;
 	letter-spacing: -1px;
-	font-weight: 600;
+	padding-bottom: 20px;
+	font-weight: 500;
 	font-style: italic;
 }
 
@@ -47,11 +47,30 @@ blockquote {
 
 cite {
 	font-size: 18px;
+	font-style: italic;
+}
+
+q {
+	font-style: italic;
 }
 
 .label {
+	font-size: 18px;
+	font-family: "helvetica", "Arial";
+	font-weight: 200;
+	letter-spacing: -0.5px;
+	padding-top: 25px;
+	padding-bottom: 45px;
+	color: #666666;
+	border-bottom: 1px solid #000000;
+}
+
+.author {
 	font-size: 14px;
-	font-family: helvetica, Arial;
+	font-family: "helvetica", "Arial";
+	font-weight: 200;
+	padding-top: 25px;
+	padding-bottom: 45px;
 	color: #666666;
 }
 
@@ -59,10 +78,15 @@ cite {
 	color: #e5000e;
 }
 
+.quote {
+	font-style: normal;
+}
+
 #coursename {
 	font-size: 112px;
 	line-height: 95%;
 	letter-spacing: -2px;
+	font-weight: 600;
 	font-style: italic;
 }
 
@@ -71,9 +95,10 @@ cite {
 }
 
 #title {
-	font-size: 64px;
+	font-size: 84px;
 	line-height: 95%;
 	letter-spacing: -2px;
-	font-weight: 600;
+	font-weight: 500;
 	font-style: italic;
+	padding-top: 75px;
 }
