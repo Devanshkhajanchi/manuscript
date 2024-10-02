@@ -1,1 +1,3 @@
-Helo World!
+This is my first Typography & Interaction project. 
+
+The text on the webpage has been taken from an article written by Italian Graphic Designer 'Massimo Vignelli' titled 'Call for Criticism', with a forweord by Michael Bierut. In addition to this, there's a reading response by me following the article. The website's design and layout have been inspired by the work of Massimo Vignelli. Vignelli was known for his simple, sraight forward and honest work. The website tries to emulate his style and uses the typefaces he loved.
