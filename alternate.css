@@ -59,6 +59,10 @@ h3{
 	letter-spacing: -1pt;
 }
 
+a{
+	text-decoration: underline;
+}
+
 #nameleft{
 	text-align: left;
 	position: relative;

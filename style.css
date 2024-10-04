@@ -37,6 +37,7 @@ footer {
 a {
 	color: #000000;
 	font-style: italic;
+	text-decoration: underline;
 }
 
 blockquote {
@@ -55,7 +56,7 @@ q {
 	font-style: italic;
 }
 
-#button {
+/* #button {
 	font-size: 18px;
 	background-color: #666666;
 	border: none;
@@ -66,7 +67,7 @@ q {
 	font-weight: medium;
 	padding: 10px;
 	color: white;
-}
+} */
 
 #title {
 	font-size: 84px;
