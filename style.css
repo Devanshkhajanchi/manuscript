@@ -36,6 +36,7 @@ footer {
 
 a {
 	color: #000000;
+	font-style: italic;
 }
 
 blockquote {
@@ -54,6 +55,32 @@ q {
 	font-style: italic;
 }
 
+#button {
+	font-size: 18px;
+	background-color: #666666;
+	border: none;
+	border-radius: 10px;
+	position: absolute;
+	font-family: "helvetica", "Arial";
+	font-style: normal;
+	font-weight: medium;
+	padding: 10px;
+	color: white;
+}
+
+#title {
+	font-size: 84px;
+	line-height: 95%;
+	letter-spacing: -2px;
+	font-weight: 500;
+	font-style: italic;
+	padding-top: 100px;
+}
+
+.ampersand {
+	color: #e5000e;
+}
+
 .label {
 	font-size: 18px;
 	font-family: "helvetica", "Arial";
@@ -61,6 +88,7 @@ q {
 	letter-spacing: -0.5px;
 	padding-top: 25px;
 	padding-bottom: 45px;
+	margin-bottom: 25px;
 	color: #666666;
 	border-bottom: 1px solid #000000;
 }
@@ -74,12 +102,14 @@ q {
 	color: #666666;
 }
 
-.ampersand {
-	color: #e5000e;
-}
-
 .quote {
 	font-style: normal;
+}
+
+#foreword {
+	border: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
 }
 
 #coursename {
@@ -94,11 +124,6 @@ q {
 	color: #666666;
 }
 
-#title {
-	font-size: 84px;
-	line-height: 95%;
-	letter-spacing: -2px;
-	font-weight: 500;
-	font-style: italic;
-	padding-top: 75px;
+.buttons{
+	display: flex;
 }
