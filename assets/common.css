@@ -23,6 +23,9 @@ html {
 
 /* MOBILE */
 
+nav {
+	background-color: var(--color-accent);
+} 
 
 /* TABLET */
 
