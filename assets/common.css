@@ -1,0 +1,43 @@
+html {
+	font-size: 1rem;
+	line-height: 1.4rem;
+}
+
+:root {
+/* TYPEFACES */
+	--font-primary: 'Inter', sans-serif;
+	--font-secondary: 'Merriweather', serif;
+
+/* FONT SIZES */
+	--font-size-s: 0.875rem;
+	--font-size-base: 1rem;
+	--font-size-l: 1.25rem;
+	--font-size-xl: 2rem;
+
+/* COLORS */
+	--color-text: #000000;
+	--color-primary: #000000;
+	--color-secondary: #ff9900;
+	--color-accent: #F04E23;
+}
+
+/* MOBILE */
+
+
+/* TABLET */
+
+@media (min-width: 800px) {
+
+}
+
+/* DESKTOP */
+
+@media (min-width: 1080px) {
+
+}
+
+/* PRINT */
+
+@media print {
+
+}
