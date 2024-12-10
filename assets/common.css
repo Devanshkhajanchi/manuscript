@@ -16,9 +16,7 @@ html {
 	--font-size-xl: 2rem;
 
 /* COLORS */
-	--color-text: #000000;
-	--color-primary: #000000;
-	--color-secondary: #ff9900;
+
 	--color-accent: #F04E23;
 }
 
@@ -29,6 +27,14 @@ header {
 	padding: 2rem;
 } 
 
+nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+}
+
 footer {
 	background-color: var(--color-accent);
 	padding: 2rem;
@@ -36,9 +42,9 @@ footer {
 
 h1 {
 	font-size: 3rem;
-	font-weight: bold;
-	letter-spacing: -0.06rem;
-	line-height: 2.5rem;
+	font-weight: 600;
+	letter-spacing: -0.1rem;
+	line-height: 2.75rem;
 }
 
 h2 {
@@ -70,12 +76,29 @@ section {
 	gap: 1rem;
 }
 
+.site-identity {
+	color: white;
+	font-size: 2rem;
+	font-weight: 600;
+	letter-spacing: -0.06rem;
+	line-height: 2rem;
+}
+
+.nav-links {
+	color: white;
+	font-size: 2rem;
+	font-weight: 400;
+	letter-spacing: -0.1rem;
+	line-height: 2.75rem;
+}
+
 .author-information {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	gap: 2rem;
-
+	font-weight: 600;
+	letter-spacing: -0.02rem;
 }
 
 .author-name {
@@ -84,6 +107,36 @@ section {
 
 .publishing-date {
 	text-align: right;
+}
+
+/* LARGE DEVICE */
+
+@media (min-width: 426px) {
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.site-identity {
+		color: white;
+		font-size: 3rem;
+		font-weight: 600;
+		letter-spacing: -0.1rem;
+		line-height: 2.75rem;
+	}
+	
+	.nav-links {
+		color: white;
+		font-size: 2rem;
+		font-weight: 400;
+		letter-spacing: -0.1rem;
+		line-height: 2.75rem;
+	}
+
 }
 
 /* TABLET */
