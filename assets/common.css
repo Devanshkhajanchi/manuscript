@@ -58,6 +58,10 @@ h3 {
 
 }
 
+a {
+	cursor: pointer;
+}
+
 main {
 	margin: 1rem;
 }
@@ -90,6 +94,10 @@ section {
 	font-weight: 400;
 	letter-spacing: -0.1rem;
 	line-height: 2.75rem;
+}
+
+.article-title {
+	text-align: center;
 }
 
 .author-information {
@@ -161,6 +169,12 @@ section {
 /* DESKTOP */
 
 @media (min-width: 1080px) {
+
+}
+
+/* DESKTOP 4K */
+
+@media (min-width: 2160px) {
 
 }
 
