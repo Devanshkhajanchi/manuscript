@@ -217,6 +217,11 @@ time::selection {
 
 	/* SPECIFICS */
 
+#introduction, #article, #response {
+	border-top: solid;
+	padding-top: 1rem;
+}
+
 .active-page {
 	color: #121212;
 	font-weight: 600;
