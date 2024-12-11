@@ -1,7 +1,7 @@
 html {
 	font-family: 'helvetica', 'sans-serif';
 	font-size: 1rem;
-	line-height: 1.4rem;
+	line-height: 1.5rem;
 }
 
 :root {
@@ -30,7 +30,6 @@ header {
 nav {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	align-items: center;
 	gap: 2rem;
 }
@@ -45,6 +44,8 @@ h1 {
 	font-weight: 600;
 	letter-spacing: -0.1rem;
 	line-height: 2.75rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
 h2 {
@@ -52,10 +53,6 @@ h2 {
 	font-weight: bold;
 	letter-spacing: -0.06rem;
 	line-height: 2rem;
-}
-
-h3 {
-
 }
 
 a {
@@ -67,7 +64,7 @@ main {
 }
 
 article {
-	max-width: 65ch;
+	max-width: 60ch;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
@@ -88,12 +85,26 @@ section {
 	line-height: 2rem;
 }
 
-.nav-links {
+.footer-site-identity {
 	color: white;
 	font-size: 2rem;
-	font-weight: 400;
-	letter-spacing: -0.1rem;
-	line-height: 2.75rem;
+	font-weight: 600;
+	letter-spacing: -0.06rem;
+	line-height: 2rem;
+}
+
+.footer-article-info {
+	color: white;
+}
+
+.nav-links {
+	color: white;
+	font-size: 1.5rem;
+	letter-spacing: -0.05rem;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 0.5rem;
 }
 
 .article-title {
@@ -117,20 +128,20 @@ section {
 	text-align: right;
 }
 
-/* LARGE DEVICE */
+/* LARGER DEVICE */
 
 @media (min-width: 426px) {
 
+	main {
+		margin: 2rem;
+	}
+
 	nav {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		gap: 2rem;
+		max-width: 60ch;
+		margin: auto;
 	}
 
 	.site-identity {
-		color: white;
 		font-size: 3rem;
 		font-weight: 600;
 		letter-spacing: -0.1rem;
@@ -138,13 +149,10 @@ section {
 	}
 	
 	.nav-links {
-		color: white;
-		font-size: 2rem;
-		font-weight: 400;
-		letter-spacing: -0.1rem;
-		line-height: 2.75rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
-
 }
 
 /* TABLET */
@@ -154,27 +162,33 @@ section {
 	nav {
 		display: flex;
 		flex-direction: row;
+		max-width: 95ch;
 		justify-content: space-between;
 	}
 
-	.nav-links {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		gap: 2rem;
+	main {
+		display: grid;
+		grid: 1fr 1fr;
 	}
-
 }
 
 /* DESKTOP */
 
 @media (min-width: 1080px) {
 
+	nav {
+		max-width: 180ch;
+	}
+
 }
 
 /* DESKTOP 4K */
 
 @media (min-width: 2160px) {
+
+	nav {
+		max-width: 250ch;
+	}
 
 }
 
