@@ -157,19 +157,15 @@ time::selection {
 
 .author-information {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
-	gap: 2rem;
+	gap: 0.75rem;
 	font-weight: 600;
 	letter-spacing: -0.02rem;
 }
 
-.author-name {
-	text-align: left;
-}
-
-.publishing-date {
-	text-align: right;
+.author-name, .publishing-date {
+	text-align: center;
 }
 
 .published-in {
@@ -275,6 +271,19 @@ time::selection {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+
+	.author-information {
+		flex-direction: row;
+	}
+
+	.author-name {
+		text-align: left;
+	}
+
+	.publishing-date {
+		text-align: right;
+	}
+
 }
 
 /* TABLET */
