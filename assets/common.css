@@ -1,10 +1,3 @@
-html {
-	font-family: 'helvetica', 'sans-serif';
-	font-size: 1rem;
-	line-height: 1.5rem;
-	letter-spacing: 0.01rem;
-}
-
 :root {
 /* TYPEFACES */
 	--font-primary: 'Inter', sans-serif;
@@ -17,8 +10,14 @@ html {
 	--font-size-xl: 2rem;
 
 /* COLORS */
-
 	--color-accent: #F04E23;
+}
+
+html {
+	font-family: 'helvetica', 'sans-serif';
+	font-size: 1rem;
+	line-height: 1.5rem;
+	letter-spacing: 0.01rem;
 }
 
 /* MOBILE */
@@ -234,8 +233,9 @@ time::selection {
 }
 
 .quote-emphasis {
+	color: var(--color-accent);
 	font-size: 2rem;
-	font-weight: 100;
+	font-weight: 600;
 }
 
 .words-of-wisdom {
@@ -246,9 +246,14 @@ time::selection {
 }
 
 .content {
+	font-family:'Bodoni Moda', serif;
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
+}
+
+.links {
+	color: var(--color-accent);
 }
 
 /* LARGER DEVICE */
@@ -417,5 +422,13 @@ time::selection {
 			font-weight: 100;
 			letter-spacing: 0.03rem;
 		}
+	}
+
+	.content {
+		font-family: 'Helvetica', sans-serif;
+	}
+
+	.quote-emphasis {
+		font-weight: 100;
 	}
 }
