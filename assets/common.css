@@ -5,7 +5,7 @@
 
 /* FONT SIZES */
 	--font-size-s: 0.875rem;
-	--font-size-base: 1rem;
+	--font-size-base: 1.05rem;
 	--font-size-l: 1.25rem;
 	--font-size-xl: 2rem;
 
@@ -15,7 +15,7 @@
 
 html {
 	font-family: 'helvetica', 'sans-serif';
-	font-size: 1rem;
+	font-size: var(--font-size-base);
 	line-height: 1.5rem;
 	letter-spacing: 0.01rem;
 }
@@ -70,6 +70,18 @@ h2 {
 h2::selection {
 	background-color: var(--color-accent);
 	color: white;
+}
+
+h3 {
+	font-family: Helvetica, sans-serif;
+	font-weight: 600;
+}
+
+h4 {
+	font-family: Helvetica, sans-serif;
+	font-size: 0.8rem;
+	font-style: italic;
+	color: grey;
 }
 
 .outside-quote::before {
@@ -170,9 +182,9 @@ time::selection {
 	text-align: center;
 }
 
-.published-in {
+/* .published-in {
 	text-align: center;
-}
+} */
 
 	/* ARTICLE AND AUTHOR INFORMATION ENDS HERE*/
 
@@ -246,7 +258,7 @@ time::selection {
 }
 
 .content {
-	font-family:'Bodoni Moda', serif;
+	font-family: 'Bodoni 72', 'Bodoni Moda', serif;
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
@@ -254,6 +266,7 @@ time::selection {
 
 .links {
 	color: var(--color-accent);
+	font-style: italic;
 }
 
 /* LARGER DEVICE */
@@ -351,6 +364,8 @@ time::selection {
 	}
 
 	.content {
+		font-size: 1.1rem;
+		line-height: 1.65rem;
 		grid-column: 2/4;
 		display: flex;
 		flex-direction: column;
@@ -383,6 +398,12 @@ time::selection {
 		margin: auto;
 	}
 
+	.content {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+
+	}
+
 }
 
 /* DESKTOP LARGE */
@@ -395,7 +416,7 @@ time::selection {
 
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	main {
 		background-color: #121212;
 	}
@@ -431,4 +452,4 @@ time::selection {
 	.quote-emphasis {
 		font-weight: 100;
 	}
-}
+} */
