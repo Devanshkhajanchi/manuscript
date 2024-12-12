@@ -65,6 +65,7 @@ h2 {
 	letter-spacing: -0.06rem;
 	line-height: 2rem;
 	position: relative;
+	height: fit-content;
 }
 
 h2::selection {
@@ -306,12 +307,23 @@ time::selection {
 
 @media (min-width: 800px) {
 
+	header {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	}
+
 	article-sections {
 		margin: 2rem;
 	}
 
 	h1 {
 		font-size: 4rem;
+	}
+
+	h2 {
+		position: sticky;
+		top: 10rem;
 	}
 
 	nav {
@@ -356,6 +368,7 @@ time::selection {
 
 	h1 {
 		font-size: 6rem;
+		letter-spacing: -0.3rem;
 		padding-top: 5rem;
 		padding-bottom: 5rem;
 	}
@@ -377,7 +390,7 @@ time::selection {
 
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	main {
 		background-color: #121212;
 	}
@@ -397,4 +410,12 @@ time::selection {
 	address, time {
 		color: #f5f5f5;
 	}
-} */
+
+	#introduction, #article, #response {
+		border-top: solid var(--color-accent);
+		p {
+			font-weight: 100;
+			letter-spacing: 0.03rem;
+		}
+	}
+}
