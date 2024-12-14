@@ -416,7 +416,7 @@ time::selection {
 
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	main {
 		background-color: #121212;
 	}
@@ -426,6 +426,10 @@ time::selection {
 	}
 
 	h2 {
+		color: #f5f5f5;
+	}
+
+	h3 {
 		color: #f5f5f5;
 	}
 
@@ -452,4 +456,4 @@ time::selection {
 	.quote-emphasis {
 		font-weight: 100;
 	}
-} */
+}
